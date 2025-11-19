@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.9.2">
 <title data-rh="true">Tutorial Intro | Theory of Computation</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://dap-fs.github.io/Deployment_01/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://dap-fs.github.io/Deployment_01/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://dap-fs.github.io/Deployment_01/docs/intro"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Tutorial Intro | Theory of Computation"><meta data-rh="true" name="description" content="Let&#x27;s discover Basic Terminologies in Theory of Computation."><meta data-rh="true" property="og:description" content="Let&#x27;s discover Basic Terminologies in Theory of Computation."><link data-rh="true" rel="icon" href="/Deployment_01/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://dap-fs.github.io/Deployment_01/docs/intro"><link data-rh="true" rel="alternate" href="https://dap-fs.github.io/Deployment_01/docs/intro" hreflang="en"><link data-rh="true" rel="alternate" href="https://dap-fs.github.io/Deployment_01/docs/intro" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Tutorial Intro","item":"https://dap-fs.github.io/Deployment_01/docs/intro"}]}</script><link rel="alternate" type="application/rss+xml" href="/Deployment_01/blog/rss.xml" title="Theory of Computation RSS Feed">
-<link rel="alternate" type="application/atom+xml" href="/Deployment_01/blog/atom.xml" title="Theory of Computation Atom Feed"><link rel="stylesheet" href="/Deployment_01/assets/css/styles.c51ffe61.css">
-<script src="/Deployment_01/assets/js/runtime~main.519b6f6b.js" defer="defer"></script>
+<link rel="alternate" type="application/atom+xml" href="/Deployment_01/blog/atom.xml" title="Theory of Computation Atom Feed"><link rel="stylesheet" href="/Deployment_01/assets/css/styles.19db5108.css">
+<script src="/Deployment_01/assets/js/runtime~main.b21fc0e9.js" defer="defer"></script>
 <script src="/Deployment_01/assets/js/main.0c9e6b72.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -22,38 +22,47 @@
 <ul>
 <li class="">Studies <strong>abstract models of computation</strong> (like DFA, NFA, PDA, Turing Machines).</li>
 <li class="">Classifies <strong>problems</strong> based on whether they are solvable / decidable.</li>
-<li class="">Helps us understand the <strong>limits of computers</strong>:<!-- -->
-<blockquote>
-<p>What can be computed?<br>
-<!-- -->What cannot be computed?<br>
-<!-- -->How efficiently can it be computed?</p>
-</blockquote>
-</li>
 </ul>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>tip</div><div class="admonitionContent_BuS1"><p>This concept help us understand the <strong>limits of computers</strong>:</p><blockquote>
+<p>01. What can be computed?<br>
+<!-- -->02. What cannot be computed?<br>
+<!-- -->03. How efficiently can it be computed?</p>
+</blockquote></div></div>
 <p>It provides the <strong>mathematical foundation</strong> behind compilers, programming languages, formal verification, and complexity theory.</p>
 <hr>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-alphabet-string-and-language">2. Alphabet, String, and Language<a href="#2-alphabet-string-and-language" class="hash-link" aria-label="Direct link to 2. Alphabet, String, and Language" title="Direct link to 2. Alphabet, String, and Language" translate="no">​</a></h2>
-<p>These three are the most basic terms you will use everywhere in TOC.</p>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="21-alphabet-σ">2.1 Alphabet (Σ)<a href="#21-alphabet-σ" class="hash-link" aria-label="Direct link to 2.1 Alphabet (Σ)" title="Direct link to 2.1 Alphabet (Σ)" translate="no">​</a></h3>
-<p>An <strong>alphabet</strong> is a <strong>finite, non-empty set of symbols</strong>.</p>
+<p><strong>Alphabet (Σ)</strong><br>
+<!-- -->An <strong>alphabet</strong> is a <strong>finite, non-empty set of symbols</strong>.</p>
 <ul>
-<li class="">Denoted by: <code>Σ</code> (Sigma)</li>
-<li class="">Examples:<!-- -->
+<li class=""><strong>Notation:</strong> <code>Σ</code> (capital Sigma)</li>
+</ul>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>Alphabet – Quick Examples</div><div class="admonitionContent_BuS1"><ul>
+<li class=""><code>Σ = {0, 1}</code> → <strong>binary alphabet</strong></li>
+<li class=""><code>Σ = {a, b, c}</code> → <strong>three-symbol alphabet</strong></li>
+<li class=""><code>Σ = {a, b, …, z}</code> → <strong>lowercase English letters</strong></li>
+</ul><blockquote>
+<p>💡 <strong>Intuition:</strong> An alphabet is like the <strong>“character set”</strong> you are allowed to use to form strings.</p>
+</blockquote></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-basic-terminologies">2. Basic Terminologies<a href="#2-basic-terminologies" class="hash-link" aria-label="Direct link to 2. Basic Terminologies" title="Direct link to 2. Basic Terminologies" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="21-alphabet-σ-1">2.1 Alphabet (Σ)<a href="#21-alphabet-σ-1" class="hash-link" aria-label="Direct link to 2.1 Alphabet (Σ)" title="Direct link to 2.1 Alphabet (Σ)" translate="no">​</a></h3>
+<p><strong>Alphabet (Σ)</strong><br>
+<!-- -->An <strong>alphabet</strong> is a <strong>finite, non-empty set of symbols</strong>.</p>
 <ul>
-<li class=""><code>Σ = {0, 1}</code> – binary alphabet</li>
-<li class=""><code>Σ = {a, b, c}</code> – alphabet with three symbols</li>
-<li class=""><code>Σ = {a, b, …, z}</code> – lowercase English letters</li>
+<li class=""><strong>Notation:</strong> <code>Σ</code> (capital Sigma)</li>
 </ul>
-</li>
-</ul>
-<blockquote>
-<p>You can think of an alphabet like the “character set” available to form strings.</p>
-</blockquote>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>Alphabet – Quick Examples</div><div class="admonitionContent_BuS1"><ul>
+<li class=""><code>Σ = {0, 1}</code> → <strong>binary alphabet</strong></li>
+<li class=""><code>Σ = {a, b, c}</code> → <strong>three-symbol alphabet</strong></li>
+<li class=""><code>Σ = {a, b, …, z}</code> → <strong>lowercase English letters</strong></li>
+</ul><blockquote>
+<p>💡 <strong>Intuition:</strong> An alphabet is like the <strong>“character set”</strong> you are allowed to use to form strings.</p>
+</blockquote></div></div>
 <hr>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="22-string-or-word">2.2 String (or Word)<a href="#22-string-or-word" class="hash-link" aria-label="Direct link to 2.2 String (or Word)" title="Direct link to 2.2 String (or Word)" translate="no">​</a></h3>
-<p>A <strong>string</strong> is a <strong>finite sequence of symbols</strong> taken from an alphabet.</p>
+<p>A <strong>string</strong> (or <strong>word</strong>) is a <strong>finite sequence of symbols</strong> taken from an alphabet <code>Σ</code>.</p>
 <ul>
-<li class="">If <code>Σ = {0, 1}</code>, then some valid strings are:<!-- -->
+<li class="">
+<p>If <code>Σ = {0, 1}</code>, then some valid strings are:</p>
 <ul>
 <li class=""><code>0</code></li>
 <li class=""><code>1</code></li>
@@ -61,162 +70,217 @@
 <li class=""><code>10110</code></li>
 </ul>
 </li>
-<li class="">A string can have:<!-- -->
+<li class="">
+<p>A string can have:</p>
 <ul>
 <li class="">Length 0 → <strong>empty string</strong>, denoted by <code>ε</code> (epsilon)</li>
 <li class="">Length <code>n</code> → written as <code>|w| = n</code> (where <code>w</code> is the string)</li>
 </ul>
 </li>
 </ul>
-<p><strong>Examples:</strong></p>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>String – Examples</div><div class="admonitionContent_BuS1"><p>Consider <code>Σ = {a, b}</code>:</p><ul>
+<li class="">Valid strings:<!-- -->
 <ul>
-<li class="">Over <code>Σ = {a, b}</code>:<!-- -->
-<ul>
-<li class=""><code>a</code>, <code>b</code>, <code>ab</code>, <code>ba</code>, <code>aab</code>, <code>bba</code> are strings.</li>
-<li class=""><code>c</code> is <strong>not</strong> a string, because <code>c ∉ Σ</code>.</li>
+<li class=""><code>a</code>, <code>b</code>, <code>ab</code>, <code>ba</code>, <code>aab</code>, <code>bba</code></li>
 </ul>
 </li>
+<li class="">Invalid string:<!-- -->
+<ul>
+<li class=""><code>c</code> is <strong>not</strong> a string over <code>Σ</code> because <code>c ∉ Σ</code>.</li>
 </ul>
+</li>
+</ul><blockquote>
+<p>🔎 <strong>Key Idea:</strong> A string is just an <strong>ordered list</strong> of characters from the alphabet.</p>
+</blockquote></div></div>
 <hr>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="23-empty-string-vs-empty-set">2.3 Empty String vs Empty Set<a href="#23-empty-string-vs-empty-set" class="hash-link" aria-label="Direct link to 2.3 Empty String vs Empty Set" title="Direct link to 2.3 Empty String vs Empty Set" translate="no">​</a></h3>
-<p>These two are extremely important and often confused:</p>
+<p>These two look similar but mean <strong>very different</strong> things.</p>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Empty String vs Empty Set</div><div class="admonitionContent_BuS1"><ul>
+<li class=""><code>ε</code> → the <strong>empty string</strong>
 <ul>
-<li class=""><code>ε</code> → empty <strong>string</strong> (length 0)</li>
-<li class=""><code>∅</code> → empty <strong>set</strong> (contains no elements)</li>
-</ul>
-<p>Example over <code>Σ = {0, 1}</code>:</p>
-<ul>
-<li class=""><code>{ε}</code> → a language with <strong>one string</strong>, which is the empty string.</li>
-<li class=""><code>∅</code> → a language with <strong>no strings at all</strong>.</li>
-</ul>
-<hr>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="24-language">2.4 Language<a href="#24-language" class="hash-link" aria-label="Direct link to 2.4 Language" title="Direct link to 2.4 Language" translate="no">​</a></h3>
-<p>A <strong>language</strong> is simply a <strong>set of strings</strong> over an alphabet.</p>
-<ul>
-<li class="">If <code>Σ = {0, 1}</code>, then some examples of languages are:<!-- -->
-<ul>
-<li class=""><code>L1 = {0, 1, 01, 10}</code> – a <strong>finite</strong> language</li>
-<li class=""><code>L2 = { w | w contains at least one 1 }</code> – an <strong>infinite</strong> language</li>
-<li class=""><code>L3 = ∅</code> – the <strong>empty language</strong></li>
-<li class=""><code>L4 = {ε}</code> – language with only the empty string</li>
+<li class="">A string with <strong>length 0</strong></li>
+<li class=""><code>|ε| = 0</code></li>
 </ul>
 </li>
+<li class=""><code>∅</code> → the <strong>empty set</strong>
+<ul>
+<li class="">A set that has <strong>no elements at all</strong></li>
 </ul>
+</li>
+</ul></div></div>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>Example Over Σ = <!-- -->1</div><div class="admonitionContent_BuS1"><ul>
+<li class=""><code>{ε}</code> → a <strong>language</strong> with exactly <strong>one string</strong>, and that string is the empty string.</li>
+<li class=""><code>∅</code> → a <strong>language</strong> with <strong>no strings</strong>.</li>
+</ul><blockquote>
+<p>⚠️ <strong>Common Mistake:</strong><br>
+<!-- -->Don’t confuse <code>{ε}</code> (one element: the empty string) with <code>∅</code> (no elements).</p>
+</blockquote></div></div>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="24-language">2.4 Language<a href="#24-language" class="hash-link" aria-label="Direct link to 2.4 Language" title="Direct link to 2.4 Language" translate="no">​</a></h3>
+<p>A <strong>language</strong> is simply a <strong>set of strings</strong> over an alphabet <code>Σ</code>.</p>
+<p>Formally:</p>
 <blockquote>
-<p>Every formal machine you will study (DFA, NFA, PDA, Turing Machine) is basically a <strong>language recognizer</strong>.</p>
+<p>A language <code>L</code> over alphabet <code>Σ</code> is any subset of <code>Σ*</code><br>
+<!-- -->(where <code>Σ*</code> is the set of <strong>all possible strings</strong> over <code>Σ</code>, including <code>ε</code>).</p>
 </blockquote>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>Language – Examples (Σ = <!-- -->1<!-- -->)</div><div class="admonitionContent_BuS1"><ul>
+<li class=""><code>L1 = {0, 1, 01, 10}</code> → a <strong>finite</strong> language</li>
+<li class=""><code>L2 = { w | w contains at least one 1 }</code> → an <strong>infinite</strong> language</li>
+<li class=""><code>L3 = ∅</code> → the <strong>empty language</strong></li>
+<li class=""><code>L4 = {ε}</code> → language with <strong>only the empty string</strong></li>
+</ul><blockquote>
+<p>🤖 <strong>Machines &amp; Languages:</strong><br>
+<!-- -->DFA, NFA, PDA, Turing Machines – all of them can be seen as <strong>language recognizers</strong>:<br>
+<!-- -->they accept or reject strings from <code>Σ*</code>.</p>
+</blockquote></div></div>
 <hr>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-operations-on-strings">3. Operations on Strings<a href="#3-operations-on-strings" class="hash-link" aria-label="Direct link to 3. Operations on Strings" title="Direct link to 3. Operations on Strings" translate="no">​</a></h2>
-<p>Given strings <code>x</code> and <code>y</code>, a few basic operations are:</p>
+<p>Given strings <code>x</code> and <code>y</code> over some alphabet <code>Σ</code>, we can define several operations.</p>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="31-concatenation">3.1 Concatenation<a href="#31-concatenation" class="hash-link" aria-label="Direct link to 3.1 Concatenation" title="Direct link to 3.1 Concatenation" translate="no">​</a></h3>
-<p>Concatenation is simply <strong>joining two strings</strong>.</p>
+<p><strong>Concatenation</strong> means <strong>joining two strings end to end</strong>.</p>
 <ul>
 <li class="">If <code>x = &quot;ab&quot;</code> and <code>y = &quot;ba&quot;</code>, then<br>
 <code>xy = &quot;abba&quot;</code></li>
 </ul>
-<p>Properties:</p>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>Properties of Concatenation</div><div class="admonitionContent_BuS1"><ul>
+<li class="">Identity with empty string:<!-- -->
 <ul>
 <li class=""><code>xε = εx = x</code></li>
-<li class="">Concatenation is <strong>associative</strong> but not necessarily commutative:<!-- -->
+</ul>
+</li>
+<li class=""><strong>Associative</strong>:<!-- -->
 <ul>
 <li class=""><code>(xy)z = x(yz)</code></li>
-<li class="">but generally <code>xy ≠ yx</code></li>
 </ul>
 </li>
+<li class=""><strong>Not necessarily commutative</strong>:<!-- -->
+<ul>
+<li class="">Generally, <code>xy ≠ yx</code><br>
+<!-- -->(e.g., <code>&quot;ab&quot; · &quot;ba&quot; = &quot;abba&quot;</code> but <code>&quot;ba&quot; · &quot;ab&quot; = &quot;baab&quot;</code>)</li>
 </ul>
+</li>
+</ul></div></div>
 <hr>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="32-length-of-a-string">3.2 Length of a String<a href="#32-length-of-a-string" class="hash-link" aria-label="Direct link to 3.2 Length of a String" title="Direct link to 3.2 Length of a String" translate="no">​</a></h3>
-<p>The length of a string <code>w</code> is denoted by <code>|w|</code>.</p>
-<ul>
-<li class="">Example:<!-- -->
-<ul>
+<p>The <strong>length</strong> of a string <code>w</code> is denoted by <code>|w|</code>.</p>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>Length – Examples</div><div class="admonitionContent_BuS1"><ul>
 <li class="">If <code>w = &quot;abba&quot;</code>, then <code>|w| = 4</code></li>
 <li class="">If <code>w = ε</code>, then <code>|ε| = 0</code></li>
-</ul>
-</li>
-</ul>
+</ul><blockquote>
+<p>📏 The function <code>| · |</code> just counts the <strong>number of symbols</strong> in the string.</p>
+</blockquote></div></div>
 <hr>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="4-operations-on-languages">4. Operations on Languages<a href="#4-operations-on-languages" class="hash-link" aria-label="Direct link to 4. Operations on Languages" title="Direct link to 4. Operations on Languages" translate="no">​</a></h2>
-<p>Let <code>L1</code> and <code>L2</code> be languages over the same alphabet <code>Σ</code>.</p>
+<p>Let <code>L1</code> and <code>L2</code> be languages over the same alphabet <code>Σ</code>.<br>
+<!-- -->We can combine them using set-like and string-like operations.</p>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="41-union">4.1 Union<a href="#41-union" class="hash-link" aria-label="Direct link to 4.1 Union" title="Direct link to 4.1 Union" translate="no">​</a></h3>
 <p><code>L1 ∪ L2</code> = set of strings that are in <strong>L1 or L2 or both</strong>.</p>
-<p>Example:</p>
-<ul>
-<li class=""><code>L1 = {a, b}</code>, <code>L2 = {b, c}</code><br>
-<code>L1 ∪ L2 = {a, b, c}</code></li>
-</ul>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>Union – Example</div><div class="admonitionContent_BuS1"><ul>
+<li class=""><code>L1 = {a, b}</code></li>
+<li class=""><code>L2 = {b, c}</code></li>
+</ul><p>Then:</p><ul>
+<li class=""><code>L1 ∪ L2 = {a, b, c}</code></li>
+</ul><blockquote>
+<p>✅ Use union when you want a language that accepts strings allowed by <strong>either</strong> of two languages.</p>
+</blockquote></div></div>
 <hr>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="42-intersection">4.2 Intersection<a href="#42-intersection" class="hash-link" aria-label="Direct link to 4.2 Intersection" title="Direct link to 4.2 Intersection" translate="no">​</a></h3>
 <p><code>L1 ∩ L2</code> = set of strings that are in <strong>both L1 and L2</strong>.</p>
-<p>Example:</p>
-<ul>
-<li class=""><code>L1 = {a, b}</code>, <code>L2 = {b, c}</code><br>
-<code>L1 ∩ L2 = {b}</code></li>
-</ul>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>Intersection – Example</div><div class="admonitionContent_BuS1"><ul>
+<li class=""><code>L1 = {a, b}</code></li>
+<li class=""><code>L2 = {b, c}</code></li>
+</ul><p>Then:</p><ul>
+<li class=""><code>L1 ∩ L2 = {b}</code></li>
+</ul><blockquote>
+<p>🎯 Intersection gives the set of strings that <strong>satisfy both conditions</strong> (belong to both languages).</p>
+</blockquote></div></div>
 <hr>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="43-difference">4.3 Difference<a href="#43-difference" class="hash-link" aria-label="Direct link to 4.3 Difference" title="Direct link to 4.3 Difference" translate="no">​</a></h3>
 <p><code>L1 − L2</code> = set of strings that are in <strong>L1 but not in L2</strong>.</p>
-<p>Example:</p>
-<ul>
-<li class=""><code>L1 = {a, b}</code>, <code>L2 = {b}</code><br>
-<code>L1 − L2 = {a}</code></li>
-</ul>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>Difference – Example</div><div class="admonitionContent_BuS1"><ul>
+<li class=""><code>L1 = {a, b}</code></li>
+<li class=""><code>L2 = {b}</code></li>
+</ul><p>Then:</p><ul>
+<li class=""><code>L1 − L2 = {a}</code></li>
+</ul><blockquote>
+<p>➖ Think of <code>L1 − L2</code> as:<br>
+<!-- -->“Start with <code>L1</code>, then remove anything that is also in <code>L2</code>.”</p>
+</blockquote></div></div>
 <hr>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="44-concatenation-of-languages">4.4 Concatenation of Languages<a href="#44-concatenation-of-languages" class="hash-link" aria-label="Direct link to 4.4 Concatenation of Languages" title="Direct link to 4.4 Concatenation of Languages" translate="no">​</a></h3>
+<p>The <strong>concatenation of languages</strong> <code>L1</code> and <code>L2</code> is:</p>
+<blockquote>
 <p><code>L1 · L2 = { xy | x ∈ L1 and y ∈ L2 }</code></p>
-<p>Example:</p>
-<ul>
-<li class=""><code>L1 = {a, b}</code>, <code>L2 = {c, d}</code><br>
-<code>L1 · L2 = {ac, ad, bc, bd}</code></li>
-</ul>
+</blockquote>
+<p>That is, take any string from <code>L1</code>, follow it by any string from <code>L2</code>.</p>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>Concatenation of Languages – Example</div><div class="admonitionContent_BuS1"><ul>
+<li class=""><code>L1 = {a, b}</code></li>
+<li class=""><code>L2 = {c, d}</code></li>
+</ul><p>Then:</p><ul>
+<li class=""><code>L1 · L2 = {ac, ad, bc, bd}</code></li>
+</ul><blockquote>
+<p>🔗 This is like nested loops:<br>
+<!-- -->for each <code>x</code> in <code>L1</code>, pair it with each <code>y</code> in <code>L2</code>.</p>
+</blockquote></div></div>
 <hr>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="45-kleene-star-l">4.5 Kleene Star (L*)<a href="#45-kleene-star-l" class="hash-link" aria-label="Direct link to 4.5 Kleene Star (L*)" title="Direct link to 4.5 Kleene Star (L*)" translate="no">​</a></h3>
-<p>Given a language <code>L</code>, the <strong>Kleene star</strong> of <code>L</code> is:</p>
-<p><code>L* =</code> set of all strings that can be formed by concatenating <strong>zero or more strings from L</strong>.</p>
-<p>It <strong>always</strong> includes <code>ε</code>.</p>
-<p>Example:</p>
+<p>Given a language <code>L</code>, the <strong>Kleene star</strong> <code>L*</code> is:</p>
+<blockquote>
+<p>The set of all strings that can be formed by concatenating<br>
+<strong>zero or more</strong> strings from <code>L</code>.</p>
+</blockquote>
 <ul>
+<li class=""><strong>Important:</strong> <code>L*</code> <strong>always</strong> includes <code>ε</code>.</li>
+</ul>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>Kleene Star – Examples</div><div class="admonitionContent_BuS1"><ol>
 <li class="">
-<p>Let <code>L = {a}</code><br>
-<!-- -->Then:</p>
+<p>Let <code>L = {a}</code></p>
 <ul>
 <li class=""><code>L* = { ε, a, aa, aaa, aaaa, … }</code></li>
+<li class="">All strings of <strong>only <code>a</code>’s</strong>, including the empty string.</li>
 </ul>
 </li>
 <li class="">
-<p>Let <code>L = {ab}</code><br>
-<!-- -->Then:</p>
+<p>Let <code>L = {ab}</code></p>
 <ul>
 <li class=""><code>L* = { ε, ab, abab, ababab, … }</code></li>
+<li class="">Repeating <code>&quot;ab&quot;</code> any number of times (including 0 times).</li>
 </ul>
 </li>
-</ul>
+</ol><blockquote>
+<p>🌟 Kleene star is used heavily in <strong>regular expressions</strong> and <strong>regular languages</strong>.</p>
+</blockquote></div></div>
 <hr>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="5-why-are-these-basics-important">5. Why Are These Basics Important?<a href="#5-why-are-these-basics-important" class="hash-link" aria-label="Direct link to 5. Why Are These Basics Important?" title="Direct link to 5. Why Are These Basics Important?" translate="no">​</a></h2>
-<p>All upcoming concepts in Theory of Computation rely on these terms:</p>
+<p>All upcoming concepts in <strong>Theory of Computation</strong> rely on these basic terms.</p>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>How These Concepts Are Used Later</div><div class="admonitionContent_BuS1"><ul>
+<li class=""><strong>Finite Automata (DFA/NFA)</strong>
 <ul>
-<li class="">To define <strong>finite automata</strong>, we need:<!-- -->
-<ul>
-<li class="">Alphabet, states, transition function, language accepted.</li>
+<li class="">Need: alphabet, states, transition function, <strong>language accepted</strong>.</li>
 </ul>
 </li>
-<li class="">To define <strong>regular expressions</strong>, we use:<!-- -->
+<li class=""><strong>Regular Expressions</strong>
 <ul>
-<li class="">Operations like union, concatenation, and Kleene star.</li>
+<li class="">Built using: union (<code>+</code> / <code>|</code>), concatenation, and Kleene star (<code>*</code>).</li>
 </ul>
 </li>
-<li class="">To discuss <strong>decidability and complexity</strong>, we must be precise about:<!-- -->
+<li class=""><strong>Decidability &amp; Complexity</strong>
+<ul>
+<li class="">Talk about:<!-- -->
 <ul>
 <li class="">What inputs (strings) look like.</li>
-<li class="">What set of strings (language) a machine accepts.</li>
+<li class="">What set of strings (language) a machine <strong>accepts</strong> or <strong>rejects</strong>.</li>
 </ul>
 </li>
 </ul>
-<p>So, having a crystal-clear understanding of <strong>alphabet</strong>, <strong>string</strong>, <strong>language</strong>, and their operations will make later topics (DFA, NFA, Regular Languages, Context-Free Languages, Turing Machines) much easier.</p>
+</li>
+</ul><blockquote>
+<p>Pracices <strong>alphabet</strong>, <strong>string</strong>, <strong>language</strong>, and their operations<br>
+<!-- -->makes later topics (DFA, NFA, CFL, Turing Machines) much easier.</p>
+</blockquote></div></div>
 <hr>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="6-quick-practice-check-your-understanding">6. Quick Practice (Check Your Understanding)<a href="#6-quick-practice-check-your-understanding" class="hash-link" aria-label="Direct link to 6. Quick Practice (Check Your Understanding)" title="Direct link to 6. Quick Practice (Check Your Understanding)" translate="no">​</a></h2>
-<p>Try to answer these before moving to the next tutorial:</p>
-<ol>
+<p>:## 6. Quick Practice (Check Your Understanding)</p>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>🎯 Quiz Time – Basic Terminologies</div><div class="admonitionContent_BuS1"><ol>
 <li class="">
 <p>Let <code>Σ = {0, 1}</code>. Which of the following are <strong>valid strings</strong> over <code>Σ</code>?</p>
 <ul>
@@ -227,21 +291,185 @@
 </ul>
 </li>
 <li class="">
-<p>If <code>Σ = {a, b}</code>, list <strong>all strings</strong> of length 2.</p>
+<p>If <code>Σ = {a, b}</code>, list <strong>all strings of length 2</strong>.</p>
 </li>
 <li class="">
 <p>Over <code>Σ = {0, 1}</code>, define a language:</p>
 <ul>
-<li class="">(a) All strings that start with <code>1</code>.</li>
-<li class="">(b) All strings that contain exactly two <code>1</code>s.</li>
+<li class="">(a) All strings that <strong>start with</strong> <code>1</code>.</li>
+<li class="">(b) All strings that contain <strong>exactly two</strong> <code>1</code>s.</li>
 </ul>
 </li>
 <li class="">
-<p>For <code>L = {ab, ba}</code>, write the first <strong>five</strong> strings in <code>L*</code>.</p>
+<p>Let <code>L = {ab, ba}</code>.<br>
+<!-- -->Write the first <strong>five</strong> strings in <code>L*</code>.</p>
 </li>
-</ol>
-<p>You can convert these into a classroom activity, quiz, or Docusaurus “quiz” section later.</p>
+</ol><blockquote>
+<p>✍️ You can convert these into an in-class activity, a quiz, or a Docusaurus “exercise” section.</p>
+</blockquote></div></div>
+<div class="toc-flashcard"><h3>2.1 Alphabet (Σ)</h3><p></p><p>An <strong>alphabet</strong> is a
+<strong class="toc-key-phrase"> finite, non-empty set of symbols</strong>.</p><p></p><p></p><p><strong>Notation:</strong> <code>Σ</code> (Sigma)</p><p></p><div class="toc-flashcard-section"><div class="toc-section-title">Examples</div><ul><li><code>Σ = <!-- -->{0, 1}</code> – binary alphabet</li><li><code>Σ = <!-- -->{a, b, c}</code> – alphabet with three symbols</li><li><code>Σ = <!-- -->{a, b, …, z}</code> – lowercase English letters</li></ul></div><div class="toc-flashcard-note"><p>💡 <strong>Intuition:</strong> Think of an alphabet as the
+<em> “character set”</em> available to form strings.</p></div></div>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="quick-quiz--alphabet-σ">Quick Quiz – Alphabet (Σ)<a href="#quick-quiz--alphabet-σ" class="hash-link" aria-label="Direct link to Quick Quiz – Alphabet (Σ)" title="Direct link to Quick Quiz – Alphabet (Σ)" translate="no">​</a></h4>
+<p><strong>Q1.</strong> Which of the following <em>is</em> a valid alphabet?</p>
+<p>A. <code>{ }</code><br>
+<!-- -->B. <code>{0, 1}</code><br>
+<!-- -->C. <code>{a, b, c, …}</code> with infinitely many symbols<br>
+<!-- -->D. <code>{a}</code> but we allow <code>a</code> to appear infinitely many times</p>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Details</summary><div><div class="collapsibleContent_i85q"><p></p><summary><strong>Show Answer</strong></summary>
+✅ <strong>Correct:</strong> B<p></p><ul>
+<li class="">An alphabet must be <strong>finite</strong> and <strong>non-empty</strong>.</li>
+<li class="">A is empty → ❌</li>
+<li class="">C is infinite → ❌</li>
+<li class="">D is weirdly phrased, but as a <em>set</em> <code>{a}</code> is finite and non-empty; however, the intended clean example here is B.</li>
+</ul></div></div></details>
 <hr>
+<p><strong>Q2.</strong> True or False:<br>
+<!-- -->“An alphabet is always a set of letters from the English language.”</p>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Details</summary><div><div class="collapsibleContent_i85q"><p></p><summary><strong>Show Answer</strong></summary>
+❌ <strong>False.</strong><p></p><p>An alphabet can be <strong>any</strong> finite, non-empty set of symbols – digits, emojis, machine instructions, etc.</p></div></div></details>
+<hr>
+<p><strong>Q3.</strong> Which of these could be the alphabet for a DFA that checks balanced parentheses?</p>
+<p>A. <code>{(, )}</code><br>
+<!-- -->B. <code>{a, b}</code><br>
+<!-- -->C. <code>{0, 1}</code><br>
+<!-- -->D. Any of the above</p>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Details</summary><div><div class="collapsibleContent_i85q"><p></p><summary><strong>Show Answer</strong></summary>
+✅ <strong>Correct:</strong> D<p></p><p>The <em>concept</em> of “balanced parentheses” depends on how we <strong>encode</strong> the input.</p><ul>
+<li class="">If we use actual parentheses → <code>{(, )}</code></li>
+<li class="">If we encode <code>(</code> as <code>0</code> and <code>)</code> as <code>1</code> → <code>{0, 1}</code></li>
+<li class="">If we encode <code>(</code> as <code>a</code> and <code>)</code> as <code>b</code> → <code>{a, b}</code><br>
+<!-- -->So all are possible alphabets.</li>
+</ul></div></div></details>
+<p><strong>Q4.</strong> Which of the following sets is <strong>not</strong> a valid alphabet?</p>
+<p>A. <code>{0, 1, 2, 3}</code><br>
+<!-- -->B. <code>{a, e, i, o, u}</code><br>
+<!-- -->C. <code>{x | x is any real number}</code><br>
+<!-- -->D. <code>{🙂, 😐, 🙁}</code></p>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Details</summary><div><div class="collapsibleContent_i85q"><p></p><summary><strong>Show Answer</strong></summary>
+✅ <strong>Correct:</strong> C<p></p><ul>
+<li class="">An alphabet must be <strong>finite</strong> and <strong>non-empty</strong>.</li>
+<li class="">C is infinite (all real numbers) → ❌</li>
+<li class="">A, B, D are all finite and non-empty → ✅ valid alphabets.</li>
+</ul></div></div></details>
+<hr>
+<p><strong>Q5.</strong> True or False:<br>
+<!-- -->“The set <code>Σ = {a, a, b}</code> is a valid alphabet.”</p>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Details</summary><div><div class="collapsibleContent_i85q"><p></p><summary><strong>Show Answer</strong></summary>
+❌ <strong>False (as written).</strong><p></p><ul>
+<li class="">An alphabet is a <strong>set</strong>, and sets <strong>do not allow duplicates</strong>.</li>
+<li class="">Properly written, this should be <code>Σ = {a, b}</code>, which <strong>is</strong> a valid alphabet.</li>
+<li class="">So the idea behind it is fine, but the notation <code>{a, a, b}</code> is mathematically sloppy.</li>
+</ul></div></div></details>
+<hr>
+<p><strong>Q6.</strong> Let <code>Σ = {0, 1, 2}</code> and <code>Γ = {a, b}</code>. Which statement is <strong>correct</strong>?</p>
+<p>A. <code>Σ</code> is an alphabet but <code>Γ</code> is not.<br>
+<!-- -->B. <code>Γ</code> is an alphabet but <code>Σ</code> is not.<br>
+<!-- -->C. Both <code>Σ</code> and <code>Γ</code> are valid alphabets.<br>
+<!-- -->D. Neither <code>Σ</code> nor <code>Γ</code> is an alphabet.</p>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Details</summary><div><div class="collapsibleContent_i85q"><p></p><summary><strong>Show Answer</strong></summary>
+✅ <strong>Correct:</strong> C<p></p><ul>
+<li class=""><code>Σ = {0, 1, 2}</code> → finite, non-empty → ✅</li>
+<li class=""><code>Γ = {a, b}</code> → finite, non-empty → ✅<br>
+<!-- -->Any finite, non-empty set of <strong>symbols</strong> (digits, letters, anything) can be an alphabet.</li>
+</ul></div></div></details>
+<hr>
+<p><strong>Q7.</strong> Which of the following best describes an <strong>alphabet</strong> in Theory of Computation?</p>
+<p>A. Any set of words in a language<br>
+<!-- -->B. Any finite, non-empty set of symbols<br>
+<!-- -->C. Any infinite set of symbols<br>
+<!-- -->D. The English letters <code>a</code> to <code>z</code> only</p>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Details</summary><div><div class="collapsibleContent_i85q"><p></p><summary><strong>Show Answer</strong></summary>
+✅ <strong>Correct:</strong> B<p></p><ul>
+<li class="">By definition, an alphabet is a <strong>finite, non-empty set of symbols</strong>.</li>
+<li class="">A is talking about a <strong>language</strong>, not an alphabet.</li>
+<li class="">C is infinite → ❌</li>
+<li class="">D is just a <strong>specific example</strong>, not the general definition.</li>
+</ul></div></div></details>
+<hr>
+<p><strong>Q8.</strong> True or False:<br>
+<!-- -->“If <code>Σ = {0, 1}</code>, then the symbol <code>10</code> is an element of <code>Σ</code>.”</p>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Details</summary><div><div class="collapsibleContent_i85q"><p></p><summary><strong>Show Answer</strong></summary>
+❌ <strong>False.</strong><p></p><ul>
+<li class=""><code>Σ = {0, 1}</code> means the <strong>symbols</strong> are <code>0</code> and <code>1</code>.</li>
+<li class=""><code>10</code> is a <strong>string</strong> over Σ (sequence of symbols), not a <strong>single symbol</strong> in Σ.</li>
+<li class="">So <code>10 ∉ Σ</code>, but <code>10 ∈ Σ*</code> (set of all strings over Σ).</li>
+</ul></div></div></details>
+<hr>
+<p><strong>Q9.</strong> Consider <code>Σ = {a, b, c}</code>. Which of the following are <strong>strings over Σ</strong>?</p>
+<ol>
+<li class=""><code>abc</code></li>
+<li class=""><code>cabba</code></li>
+<li class=""><code>acx</code></li>
+<li class=""><code>ε</code> (epsilon, empty string)</li>
+</ol>
+<p>A. 1 and 2 only<br>
+<!-- -->B. 1, 2, and 4<br>
+<!-- -->C. 1, 3, and 4<br>
+<!-- -->D. All of them</p>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Details</summary><div><div class="collapsibleContent_i85q"><p></p><summary><strong>Show Answer</strong></summary>
+✅ <strong>Correct:</strong> B<p></p><ul>
+<li class="">Valid strings over Σ use <strong>only</strong> symbols from <code>{a, b, c}</code>.</li>
+<li class=""><code>abc</code> ✅</li>
+<li class=""><code>cabba</code> ✅</li>
+<li class=""><code>acx</code> ❌ (contains <code>x</code> which is not in Σ)</li>
+<li class=""><code>ε</code> ✅ (empty string is always allowed over any alphabet).</li>
+</ul></div></div></details>
+<hr>
+<p><strong>Q10.</strong> Let <code>Σ = {a, b}</code>. Which of the following is <strong>not</strong> a correct way to describe <code>Σ</code>?</p>
+<p>A. Alphabet with symbols <code>a</code> and <code>b</code><br>
+<!-- -->B. Set of symbols used to build strings<br>
+<!-- -->C. The set <code>{a, b}</code><br>
+<!-- -->D. The set of all possible strings made from <code>a</code> and <code>b</code></p>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Details</summary><div><div class="collapsibleContent_i85q"><p></p><summary><strong>Show Answer</strong></summary>
+✅ <strong>Correct:</strong> D<p></p><ul>
+<li class="">D describes <code>Σ*</code>, not <code>Σ</code>.</li>
+<li class=""><code>Σ</code> is just the basic <strong>symbol set</strong>, not all strings.</li>
+<li class="">A, B, C are all correct ways to talk about <code>Σ</code>.</li>
+</ul></div></div></details>
+<hr>
+<p><strong>Q11.</strong> True or False:<br>
+<!-- -->“The empty set <code>∅</code> can be used as an alphabet in Theory of Computation.”</p>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Details</summary><div><div class="collapsibleContent_i85q"><p></p><summary><strong>Show Answer</strong></summary>
+❌ <strong>False.</strong><p></p><ul>
+<li class="">By definition, an alphabet must be <strong>non-empty</strong>.</li>
+<li class=""><code>∅</code> has no symbols → we cannot form any strings at all.</li>
+<li class="">So <code>∅</code> is <strong>not</strong> allowed as an alphabet.</li>
+</ul></div></div></details>
+<hr>
+<p><strong>Q12.</strong> You are designing a machine that reads <strong>RGB colors</strong>, encoded as <code>R</code>, <code>G</code>, <code>B</code>. What is a natural choice for the alphabet?</p>
+<p>A. <code>{R, G, B}</code><br>
+<!-- -->B. <code>{red, green, blue}</code><br>
+<!-- -->C. <code>{0, 1}</code><br>
+<!-- -->D. <code>{R, G, B, 0, 1}</code></p>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Details</summary><div><div class="collapsibleContent_i85q"><p></p><summary><strong>Show Answer</strong></summary>
+✅ <strong>Correct:</strong> A<p></p><ul>
+<li class="">The most direct encoding is <code>{R, G, B}</code>.</li>
+<li class="">B is also finite and non-empty, so it <strong>could</strong> be an alphabet, but typically in TOC we prefer <strong>single-character symbols</strong>, so A is the clean answer.</li>
+<li class="">C could work if we re-encode colors in binary, but that’s not what the question says.</li>
+<li class="">D mixes two encodings unnecessarily.</li>
+</ul></div></div></details>
+<hr>
+<p><strong>Q13.</strong> Let <code>Σ = {a, b, c}</code>. Which of the following statements is <strong>true</strong>?</p>
+<p>A. <code>Σ</code> is a language.<br>
+<!-- -->B. <code>Σ</code> is an alphabet.<br>
+<!-- -->C. <code>Σ</code> must be infinite to be useful.<br>
+<!-- -->D. <code>Σ</code> contains all possible strings over <code>{a, b, c}</code>.</p>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Details</summary><div><div class="collapsibleContent_i85q"><p></p><summary><strong>Show Answer</strong></summary>
+✅ <strong>Correct:</strong> B<p></p><ul>
+<li class=""><code>Σ</code> is a <strong>finite, non-empty set of symbols</strong> → an alphabet.</li>
+<li class="">A language is usually a <strong>set of strings</strong> over Σ, not just the symbol set itself.</li>
+<li class="">C is wrong; alphabets must be <strong>finite</strong>, not infinite.</li>
+<li class="">D describes <code>Σ*</code>, not <code>Σ</code>.</li>
+</ul></div></div></details>
+<hr>
+<p><strong>Q14.</strong> True or False:<br>
+<!-- -->“Once we fix an alphabet <code>Σ</code>, every string we study in that context must be built only from the symbols in <code>Σ</code>.”</p>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Details</summary><div><div class="collapsibleContent_i85q"><p></p><summary><strong>Show Answer</strong></summary>
+✅ <strong>True.</strong><p></p><ul>
+<li class="">In a formal model, once we <strong>fix</strong> the alphabet, all strings, languages, and machines are defined <strong>with respect to that alphabet</strong>.</li>
+<li class="">Using symbols outside <code>Σ</code> would mean we are changing the basic setup.</li>
+</ul></div></div></details>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="7-whats-next">7. What’s Next?<a href="#7-whats-next" class="hash-link" aria-label="Direct link to 7. What’s Next?" title="Direct link to 7. What’s Next?" translate="no">​</a></h2>
 <p>In the next tutorial, we will:</p>
 <ul>
@@ -249,8 +477,7 @@
 <li class="">See how a machine processes a string symbol-by-symbol.</li>
 <li class="">Connect the idea of a machine with the idea of a <strong>language accepted</strong> by that machine.</li>
 </ul>
-<p>Let’s keep going and slowly build your <strong>TOC toolkit</strong>. 🚀</p>
-<p>The <code>npm run start</code> command builds your website locally and serves it through a development server, ready for you to view at <a href="http://localhost:3000/" target="_blank" rel="noopener noreferrer" class="">http://localhost:3000/</a>.</p>
-<p>Open <code>docs/intro.md</code> (this page) and edit some lines: the site <strong>reloads automatically</strong> and displays your changes.</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/intro.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--next" href="/Deployment_01/docs/category/tutorial---basics"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Tutorial - Basics</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#1-what-is-theory-of-computation" class="table-of-contents__link toc-highlight">1. What is Theory of Computation?</a></li><li><a href="#2-alphabet-string-and-language" class="table-of-contents__link toc-highlight">2. Alphabet, String, and Language</a><ul><li><a href="#21-alphabet-σ" class="table-of-contents__link toc-highlight">2.1 Alphabet (Σ)</a></li><li><a href="#22-string-or-word" class="table-of-contents__link toc-highlight">2.2 String (or Word)</a></li><li><a href="#23-empty-string-vs-empty-set" class="table-of-contents__link toc-highlight">2.3 Empty String vs Empty Set</a></li><li><a href="#24-language" class="table-of-contents__link toc-highlight">2.4 Language</a></li></ul></li><li><a href="#3-operations-on-strings" class="table-of-contents__link toc-highlight">3. Operations on Strings</a><ul><li><a href="#31-concatenation" class="table-of-contents__link toc-highlight">3.1 Concatenation</a></li><li><a href="#32-length-of-a-string" class="table-of-contents__link toc-highlight">3.2 Length of a String</a></li></ul></li><li><a href="#4-operations-on-languages" class="table-of-contents__link toc-highlight">4. Operations on Languages</a><ul><li><a href="#41-union" class="table-of-contents__link toc-highlight">4.1 Union</a></li><li><a href="#42-intersection" class="table-of-contents__link toc-highlight">4.2 Intersection</a></li><li><a href="#43-difference" class="table-of-contents__link toc-highlight">4.3 Difference</a></li><li><a href="#44-concatenation-of-languages" class="table-of-contents__link toc-highlight">4.4 Concatenation of Languages</a></li><li><a href="#45-kleene-star-l" class="table-of-contents__link toc-highlight">4.5 Kleene Star (L*)</a></li></ul></li><li><a href="#5-why-are-these-basics-important" class="table-of-contents__link toc-highlight">5. Why Are These Basics Important?</a></li><li><a href="#6-quick-practice-check-your-understanding" class="table-of-contents__link toc-highlight">6. Quick Practice (Check Your Understanding)</a></li><li><a href="#7-whats-next" class="table-of-contents__link toc-highlight">7. What’s Next?</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/Deployment_01/docs/intro">Tutorial</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://x.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/Deployment_01/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div>
+<p>Let’s keep going and slowly build your <strong>TOC mind muscles</strong>. 🚀</p>
+<p>Open <code>docs/intro.md</code> (this page) and edit some lines: the site <strong>reloads automatically</strong> and displays your changes.</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/intro.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--next" href="/Deployment_01/docs/category/tutorial---basics"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Tutorial - Basics</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#1-what-is-theory-of-computation" class="table-of-contents__link toc-highlight">1. What is Theory of Computation?</a><ul><li><a href="#21-alphabet-σ" class="table-of-contents__link toc-highlight">2.1 Alphabet (Σ)</a></li></ul></li><li><a href="#2-basic-terminologies" class="table-of-contents__link toc-highlight">2. Basic Terminologies</a><ul><li><a href="#21-alphabet-σ-1" class="table-of-contents__link toc-highlight">2.1 Alphabet (Σ)</a></li><li><a href="#22-string-or-word" class="table-of-contents__link toc-highlight">2.2 String (or Word)</a></li><li><a href="#23-empty-string-vs-empty-set" class="table-of-contents__link toc-highlight">2.3 Empty String vs Empty Set</a></li><li><a href="#24-language" class="table-of-contents__link toc-highlight">2.4 Language</a></li></ul></li><li><a href="#3-operations-on-strings" class="table-of-contents__link toc-highlight">3. Operations on Strings</a><ul><li><a href="#31-concatenation" class="table-of-contents__link toc-highlight">3.1 Concatenation</a></li><li><a href="#32-length-of-a-string" class="table-of-contents__link toc-highlight">3.2 Length of a String</a></li></ul></li><li><a href="#4-operations-on-languages" class="table-of-contents__link toc-highlight">4. Operations on Languages</a><ul><li><a href="#41-union" class="table-of-contents__link toc-highlight">4.1 Union</a></li><li><a href="#42-intersection" class="table-of-contents__link toc-highlight">4.2 Intersection</a></li><li><a href="#43-difference" class="table-of-contents__link toc-highlight">4.3 Difference</a></li><li><a href="#44-concatenation-of-languages" class="table-of-contents__link toc-highlight">4.4 Concatenation of Languages</a></li><li><a href="#45-kleene-star-l" class="table-of-contents__link toc-highlight">4.5 Kleene Star (L*)</a></li></ul></li><li><a href="#5-why-are-these-basics-important" class="table-of-contents__link toc-highlight">5. Why Are These Basics Important?</a></li><li><a href="#7-whats-next" class="table-of-contents__link toc-highlight">7. What’s Next?</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/Deployment_01/docs/intro">Tutorial</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://x.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/Deployment_01/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div>
 </body>
 </html>
